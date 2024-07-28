@@ -1,0 +1,30 @@
+import = ["/home/zasbirrahman/.config/alacritty/colors.toml", "/home/zasbirrahman/.config/alacritty/fonts.toml"]
+live_config_reload = true
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+dynamic_title = true
+
+[window.dimensions]
+columns = 115
+lines = 20
+
+[window.padding]
+x = 20
+y = 20
+
+[font]
+
+normal.family = "MorePerfectDOSVGA"
+bold.family =  "MorePerfectDOSVGA"
+italic.family = "MorePerfectDOSVGA"
+bold_italic.family = "MorePerfectDOSVGA"

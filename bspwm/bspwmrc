@@ -16,7 +16,7 @@
 
 polybar &
 alacritty &
-nitrogen --restore &
+feh --bg-scale ~/Downloads/weirdbackground.png
 killall nm-applet && nm-applet &
 pgrep -x sxhkd > /dev/null || sxhkd &
 

@@ -22,8 +22,8 @@ super + d
 	dmenu_run
 
 # other program launcher
-super + j
-    rofi -show drun -config ~/.config/rofi/config.rasi
+#super + j
+#    rofi -show drun -config ~/.config/rofi/config.rasi
 
 
 # nyxt - the hacker's browser ALHAMDULILLAH

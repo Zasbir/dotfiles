@@ -1,3 +1,4 @@
+. "${HOME}/.cache/wal/colors.sh"
 
 
 
@@ -99,49 +100,27 @@
 #                       \|___|/                                 THEME
 # (which is also kind of stolen from some other dude's config)
 
-#[colors.primary]
-#background = "#11111C"
-#foreground = "#e0def4"
-
-
-#[colors.normal]
-#black = "#181b28"
-#blue = "#7aa2f7"
-#cyan = "#449dab"
-#green = "#9ece6a"
-#magenta = "#ad8ee6"
-#red = "#f7768e"
-#white = "#787c99"
-#yellow = "#e0af68"
-
-#[colors.bright]
-#black = "#181b28"
-#blue = "#7da6ff"
-#cyan = "#0db9d7"
-#green = "#b9f27c"
-#magenta = "#bb9af7"
-#red = "#ff7a93"
-#white = "#acb0d0"
-#yellow = "#ff9e64"
-
-
-#███████╗██████╗  █████╗  ██████╗███████╗
-#██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝
-#███████╗██████╔╝███████║██║     █████╗
-#╚════██║██╔═══╝ ██╔══██║██║     ██╔══╝
-#███████║██║     ██║  ██║╚██████╗███████╗
-#╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝╚══════╝
-#   a wal theme
-
-
 [colors.primary]
-background='#0c0e12'
-foreground='#a6c6ca'
+background = "$colors1"
+foreground = "$colors2"
+
 
 [colors.normal]
-black='#0c0e12'
-blue='#a6c6ca'
-magenta='#9b709f'
-red='#c66a5d'
-white='#e0def1'
-yellow='#ba9371'
+black = "#181b28"
+blue = "#7aa2f7"
+cyan = "#449dab"
+green = "#9ece6a"
+magenta = "#ad8ee6"
+red = "#f7768e"
+white = "#787c99"
+yellow = "#e0af68"
+
+[colors.bright]
+black = "#181b28"
+blue = "#7da6ff"
+cyan = "#0db9d7"
+green = "#b9f27c"
+magenta = "#bb9af7"
+red = "#ff7a93"
+white = "#acb0d0"
+yellow = "#ff9e64"

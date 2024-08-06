@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/zasbirrahman/Downloads/dark.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010002",
+        "foreground": "#d6d4d6",
+        "cursor": "#d6d4d6"
+    },
+    "colors": {
+        "color0": "#010002",
+        "color1": "#B13F4C",
+        "color2": "#E99A71",
+        "color3": "#156792",
+        "color4": "#4E4CA4",
+        "color5": "#BD47B2",
+        "color6": "#2EAFBF",
+        "color7": "#d6d4d6",
+        "color8": "#959495",
+        "color9": "#B13F4C",
+        "color10": "#E99A71",
+        "color11": "#156792",
+        "color12": "#4E4CA4",
+        "color13": "#BD47B2",
+        "color14": "#2EAFBF",
+        "color15": "#d6d4d6"
+    }
+}

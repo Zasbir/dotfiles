@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/zasbirrahman/Downloads/jellyfishinspace.jpeg"
+let background = "#0c0e12"
+let foreground = "#a6c6ca"
+let cursor     = "#a6c6ca"
+
+" Colors
+let color0  = "#0c0e12"
+let color1  = "#58565E"
+let color2  = "#996459"
+let color3  = "#C66A5D"
+let color4  = "#BA9371"
+let color5  = "#6E7186"
+let color6  = "#9B709F"
+let color7  = "#a6c6ca"
+let color8  = "#748a8d"
+let color9  = "#58565E"
+let color10 = "#996459"
+let color11 = "#C66A5D"
+let color12 = "#BA9371"
+let color13 = "#6E7186"
+let color14 = "#9B709F"
+let color15 = "#a6c6ca"

@@ -33,8 +33,28 @@ x = 20
 y = 20
 
 [font]
-
 normal.family = "MorePerfectDOSVGA"
 bold.family =  "MorePerfectDOSVGA"
 italic.family = "MorePerfectDOSVGA"
 bold_italic.family = "MorePerfectDOSVGA"
+
+
+#normal.family = "LessPerfectDOSVGA"
+#bold.family =  "LessPerfectDOSVGA"
+#italic.family = "LessPerfectDOSVGA"
+#bold_italic.family = "LessPerfectDOSVGA"
+
+
+#normal.family = "CartographCF"
+#bold.family =  "CartographCF"
+#italic.family = "CartographCF"
+#bold_italic.family = "CartographCF"
+
+
+#normal.family = "tamzen"
+#bold.family =  "tamzen"
+#italic.family = "tamzen"
+#bold_italic.family = "tamzen"
+
+
+

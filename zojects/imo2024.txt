@@ -1,0 +1,38 @@
+██╗███╗   ███╗ ██████╗
+██║████╗ ████║██╔═══██╗
+██║██╔████╔██║██║   ██║
+██║██║╚██╔╝██║██║   ██║
+██║██║ ╚═╝ ██║╚██████╔╝
+╚═╝╚═╝     ╚═╝ ╚═════╝
+
+
+INSHA A ALLAH WE WILL THE WIN THE IMO AT AGE 14
+
+
+████████╗██████╗ ██╗ ██████╗
+╚══██╔══╝██╔══██╗██║██╔════╝
+   ██║   ██████╔╝██║██║  ███╗
+   ██║   ██╔══██╗██║██║   ██║
+   ██║   ██║  ██║██║╚██████╔╝
+   ╚═╝   ╚═╝  ╚═╝╚═╝ ╚═════╝
+
+trigonometry is the study of triangles and more specifically right angle triangles. it is one of the most important fields in the entirety of mathematics.
+
+
+ ██████╗ ██████╗ ███╗   ███╗████████╗██╗ ██████╗███████╗
+██╔════╝██╔═══██╗████╗ ████║╚══██╔══╝██║██╔════╝██╔════╝
+██║     ██║   ██║██╔████╔██║   ██║   ██║██║     ███████╗
+██║     ██║   ██║██║╚██╔╝██║   ██║   ██║██║     ╚════██║
+╚██████╗╚██████╔╝██║ ╚═╝ ██║   ██║   ██║╚██████╗███████║
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝   ╚═╝   ╚═╝ ╚═════╝╚══════╝
+
+combinatorics is the study of counting; it can be thought of as advanced counting; it is essential for math olympiads.
+
+
+furthermore, the combination formula:
+
+C (n, r) = 		n!
+		_________________
+		      (n-r)r!
+
+

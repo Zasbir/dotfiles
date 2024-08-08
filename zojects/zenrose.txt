@@ -1,0 +1,124 @@
+███████╗███████╗███╗   ██╗██████╗  ██████╗ ███████╗███████╗
+╚══███╔╝██╔════╝████╗  ██║██╔══██╗██╔═══██╗██╔════╝██╔════╝
+  ███╔╝ █████╗  ██╔██╗ ██║██████╔╝██║   ██║███████╗█████╗
+ ███╔╝  ██╔══╝  ██║╚██╗██║██╔══██╗██║   ██║╚════██║██╔══╝
+███████╗███████╗██║ ╚████║██║  ██║╚██████╔╝███████║███████╗
+╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
+
+
+MAKE A CUSTOM WINDOW MANAGER USING THE PENROSE RUST LIBRARY
+
+
+LAYOUTS : TILING, FLOATING, MONOCLE, AND MORE
+
+FEATURES :
+
+* BULIT IN BAR - ZAR
+
+* EXTREMELY LIGHTWEIGHT
+
+* VERY AESTHETIC AND RETRO
+
+* RETRO BEHAVIOUR
+
+* FUNCTIONAL
+
+* FAST
+
+* AND AESTHETIC AND RETRO AGAIN
+
+
+
+
+███╗   ███╗███████╗ ██████╗ ███████╗
+████╗ ████║██╔════╝██╔════╝ ██╔════╝
+██╔████╔██║███████╗██║  ███╗███████╗
+██║╚██╔╝██║╚════██║██║   ██║╚════██║
+██║ ╚═╝ ██║███████║╚██████╔╝███████║
+╚═╝     ╚═╝╚══════╝ ╚═════╝ ╚══════╝
+
+messages are a way for the x server to communicate with the 
+cilent.
+
+as i had deduced before the messages CAN certainly be used to 
+affect a single window however transformers provide that ability 
+affecting the tiling of the entire window manager.
+
+furthermore, messages can be used to invoke transformers.
+
+in conclusion, messages are quite fundamental.
+
+
+████████╗██████╗ ███████╗███████╗██████╗ ███╗   ███╗██████╗
+╚══██╔══╝██╔══██╗██╔════╝██╔════╝██╔══██╗████╗ ████║██╔══██╗
+   ██║   ██████╔╝███████╗█████╗  ██████╔╝██╔████╔██║██████╔╝
+   ██║   ██╔══██╗╚════██║██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══██╗
+   ██║   ██║  ██║███████║██║     ██║  ██║██║ ╚═╝ ██║██║  ██║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝
+
+are used to alter the behaviour of the tiling window manager they are 
+applied to certain layouts and produce certain tiling patterns.
+
+
+ █████╗  ██████╗████████╗██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+███████║██║        ██║   ██║██║   ██║██╔██╗ ██║███████╗
+██╔══██║██║        ██║   ██║██║   ██║██║╚██╗██║╚════██║
+██║  ██║╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║███████║
+╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
+happen when in response to a certain keybind recorded and found 
+using a KeyEventHandler.
+
+there are five helper functions for writing common actions :
+
+ ** key_handler = it wraps a func1tion that takes a mutable reference of the widnow manager state and a reference to the XConn (which is most probably the configuration settings in regards to the X11 interface) and runs custom code.
+
+ ** modify_with = this helper handles the diff and refresh cycle when calling pure state functions. 
+
+ ** send_layout_message = this is quite self-explanatory.
+
+ ** broadcast_layout_message = this is the same thing as send_layout message only in this case the message is copied and sent to ALL layouts available to the current workspace rather than just the active one.
+
+ ** spawn = this helper spawns a program as a sub process.
+
+
+██╗   ██╗██╗
+██║   ██║██║
+██║   ██║██║
+██║   ██║██║
+╚██████╔╝██║
+ ╚═════╝ ╚═╝
+
+in terms of UI penrose has a single status bar which can configured using its own API.
+
+the status bar is nice and lightweight and is constructed by the means of widgets as building blocks.
+
+
+███████╗██╗  ██╗████████╗██╗ ██████╗ ███╗   ██╗███████╗
+██╔════╝╚██╗██╔╝╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+█████╗   ╚███╔╝    ██║   ██║██║   ██║██╔██╗ ██║███████╗
+██╔══╝   ██╔██╗    ██║   ██║██║   ██║██║╚██╗██║╚════██║
+███████╗██╔╝ ██╗   ██║   ██║╚██████╔╝██║ ╚████║███████║
+╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
+an extension is a piece of user written code that works with the penrose apis in order to provide an experience more tailored to the needs of the user.
+
+
+ █████╗ ██████╗ ██╗
+██╔══██╗██╔══██╗██║
+███████║██████╔╝██║
+██╔══██║██╔═══╝ ██║
+██║  ██║██║     ██║
+╚═╝  ╚═╝╚═╝     ╚═╝
+
+in accordance to the documentation we will be following first the pure data structures that represent the logical state of the window manager and then dig into the core module which contains the majority of the functionality of the widnow manager.
+
+and in order to investigate the lower level X11 interactions we can also read about the x module and its associated traits. 
+
+and finally we have the builtin and extensions module (which was briefly touched upon above) in order to add further functionality and on top of the rest of penrose.
+
+
+ZAYAN'S TAKE:
+
+this 

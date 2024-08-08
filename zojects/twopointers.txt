@@ -1,0 +1,14 @@
+██████╗     ██████╗  ██████╗ ██╗███╗   ██╗████████╗███████╗██████╗ ███████╗
+╚════██╗    ██╔══██╗██╔═══██╗██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝
+ █████╔╝    ██████╔╝██║   ██║██║██╔██╗ ██║   ██║   █████╗  ██████╔╝███████╗
+██╔═══╝     ██╔═══╝ ██║   ██║██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗╚════██║
+███████╗    ██║     ╚██████╔╝██║██║ ╚████║   ██║   ███████╗██║  ██║███████║
+╚══════╝    ╚═╝      ╚═════╝ ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚══════╝
+
+
+
+
+the two pointers technique is a very useful and famous technique for solving coding problems involving arrays; it works by having two pointers on either end of the array and pushes them inwards greatly increasing the speed of the algoirthm.
+
+
+here we can see some implementations of such an algorithm in Python and C++. (not respectively) 

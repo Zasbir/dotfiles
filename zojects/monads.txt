@@ -1,0 +1,42 @@
+ _____ ______   ________  ________   ________  ________  ________
+|\   _ \  _   \|\   __  \|\   ___  \|\   __  \|\   ___ \|\   ____\
+\ \  \\\__\ \  \ \  \|\  \ \  \\ \  \ \  \|\  \ \  \_|\ \ \  \___|_
+ \ \  \\|__| \  \ \  \\\  \ \  \\ \  \ \   __  \ \  \ \\ \ \_____  \
+  \ \  \    \ \  \ \  \\\  \ \  \\ \  \ \  \ \  \ \  \_\\ \|____|\  \
+   \ \__\    \ \__\ \_______\ \__\\ \__\ \__\ \__\ \_______\____\_\  \
+    \|__|     \|__|\|_______|\|__| \|__|\|__|\|__|\|_______|\_________\
+                                                           \|_________|
+
+
+
+a monad in x is a monoid of the endofunctors of x.
+
+and a monoid is type of category with some specific characteristics.
+
+and an endofunctor is a type of functor that applies to the entire cateogry
+such that it can be used to return to itself; this can be used to change or 
+map the entire category.
+
+and a functor is a morphism but for entire categories instead of objects 
+inside of the category.
+
+
+above it is explained mathematically however : 
+
+in order to make use of it programatically we would need to expand more
+upon the characteristics, that were mentioned above, of the monoid.
+
+in order to do this we will make an example out of one of the most important
+monads in Haskell :
+
+the Maybe monad :-
+
+| a type constructor : which is made using the data constructor: it is like the typedef keyword in C however it is more powerful.
+
+| a return function : which provides a gateway from pure functions into the impure world.
+
+return :: a -> Maybe a
+
+| a bind operator : which is used to bind monadic functions and other functions (usually represented in an anonoymous fashion.). Furthermore, it ties it in a sequential manner such that if it passes the first "case" then it might succeed on to the next "stage" which is the anonmyous function.
+
+so with this we can see that a monad is just the minimal structure needed to be able to modify the internal value of the function; it is the minimal data structure that modifies the internal value of the value passed on into the function. thus, providing a gateway from the pure world to the impure world.

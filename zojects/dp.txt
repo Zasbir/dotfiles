@@ -1,0 +1,171 @@
+ ________  ________
+|\   ___ \|\   __  \
+\ \  \_|\ \ \  \|\  \
+ \ \  \ \\ \ \   ____\
+  \ \  \_\\ \ \  \___|
+   \ \_______\ \__\
+    \|_______|\|__| dynamic programming
+
+
+in this text file we will explore and think upon the dyanmic programming thinking schemes.
+
+ dp is used to fuse the:
+
+* CORRECTNESS of BRUTE FORCE operations
+
+and the
+
+* EFFICIENCY of GREEDY algorithms.
+
+there are two common use cases to dp:
+
+1) finding an optimal solution.
+
+2) counting the total number of solutions for a problem.
+
+INSHA A ALLAH we will use 
+
+███╗   ███╗███████╗███╗   ███╗ ██████╗
+████╗ ████║██╔════╝████╗ ████║██╔═══██╗
+██╔████╔██║█████╗  ██╔████╔██║██║   ██║
+██║╚██╔╝██║██╔══╝  ██║╚██╔╝██║██║   ██║
+██║ ╚═╝ ██║███████╗██║ ╚═╝ ██║╚██████╔╝
+╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝ization
+
+
+memoization, also known as (top down programming) is a sub technique used in the dynamic programming technique used to reduce the time complexity of the algorithm such that the recursive code may actually be able to stand in tests of higher precendence.
+
+
+there are three types of memoization :
+
+
+** one dimensional memoization
+
+an example :
+
+
+// CODE STARTS HERE
+
+#include <iostream>
+#inlclude <vectors>
+
+vector<int> term(n + 1, 0);
+
+int fib (int n)
+{
+  // here we have the base cases.
+  if (n <= 1)
+  {
+      return n;
+  }
+  //now we check if the contents of the array are empty or not.
+  if (term[n] != 0)
+  {
+      return term[n];
+  }
+  else {
+      term[n] = fib(n - 1) + fib(n - 2);
+  }
+}
+
+// CODE ENDS HERE 
+
+** two dimensional memoization
+
+
+** three dimensional memoization
+
+
+
+
+████████╗ █████╗ ██████╗ ██╗   ██╗
+╚══██╔══╝██╔══██╗██╔══██╗██║   ██║
+   ██║   ███████║██████╔╝██║   ██║
+   ██║   ██╔══██║██╔══██╗██║   ██║
+   ██║   ██║  ██║██████╔╝╚██████╔╝
+   ╚═╝   ╚═╝  ╚═╝╚═════╝  ╚═════╝lation
+
+
+tabulation, otherwise known as (bottom up programming) is a sub technique in the dynamic programming domain such that it functions by filling out a TABLE from the bottom up. this table can be thought of as roughly the equivalent of the cache array shown in the implementations of the memoization above.
+
+in some cases tabulation, comes ahead of memoization as due to its iterative flow it minimizes recursive overhead.
+
+
+an example of the a tabulation solution:
+
+
+#include <iostream>
+#include <vector>
+
+
+using namespace std;
+
+int fib ( int n )
+{
+	if ( n <= 1)
+	{
+		return n;
+	}
+	else
+	{
+		vector<int> table(n + 1, 0);
+table[0] = 0;
+		table[1] = 1;
+		for ( int i = 0; i <= n; i++)
+		{
+			term[i] = term[i - 2] + term[i - 1];
+		}
+		return term[n]
+	}
+
+}
+
+
+ ██████╗ ██████╗ ███████╗███████╗██████╗ ██╗   ██╗
+██╔════╝ ██╔══██╗██╔════╝██╔════╝██╔══██╗╚██╗ ██╔╝
+██║  ███╗██████╔╝█████╗  █████╗  ██║  ██║ ╚████╔╝
+██║   ██║██╔══██╗██╔══╝  ██╔══╝  ██║  ██║  ╚██╔╝
+╚██████╔╝██║  ██║███████╗███████╗██████╔╝   ██║
+ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═════╝    ╚═╝
+
+
+greedy problems are problems that aim to get as much accuracy as possible while taking the seemingly most optimal option at every turn; in hindsight it might seem that such choices are inoptimal and not very far thought out, greedy problems provide a great middle ground between speed and accuracy.
+
+
+███████╗ ██████╗ ██████╗ ████████╗███████╗
+██╔════╝██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝
+███████╗██║   ██║██████╔╝   ██║   ███████╗
+╚════██║██║   ██║██╔══██╗   ██║   ╚════██║
+███████║╚██████╔╝██║  ██║   ██║   ███████║
+╚══════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
+
+
+there are many sorting algorithms in order to sort arrays or vectors and whatnot.
+
+
+███████╗███████╗ █████╗ ██████╗  ██████╗██╗  ██╗
+██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║
+███████╗█████╗  ███████║██████╔╝██║     ███████║
+╚════██║██╔══╝  ██╔══██║██╔══██╗██║     ██╔══██║
+███████║███████╗██║  ██║██║  ██║╚██████╗██║  ██║
+╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+
+
+the searching algorithms are very important; don't have much to say ngl.
+
+
+ ██╗ ██████╗  ██╗███████╗
+███║██╔═████╗███║██╔════╝
+╚██║██║██╔██║╚██║███████╗
+ ██║████╔╝██║ ██║╚════██║
+ ██║╚██████╔╝ ██║███████║
+ ╚═╝ ╚═════╝  ╚═╝╚══════╝
+
+
+ the title above refers to BINARY SEARCH which uses the divide and conquer philosophy such that the sorted array / vector remains in two (hence the BINARY keyword in the name). it is divided using a pivot in the MIDDLE and the rest are called LEFT and RIGHT; now we will see from the PIVOT if the target is greater or lesser than the pivot. and like this we can keep dividing and conquering until the target is found.
+
+binary search can be coded either iterively or recursively.
+
+
+
+

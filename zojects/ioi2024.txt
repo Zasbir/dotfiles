@@ -1,0 +1,25 @@
+██╗ ██████╗ ██╗
+██║██╔═══██╗██║
+██║██║   ██║██║
+██║██║   ██║██║
+██║╚██████╔╝██║
+╚═╝ ╚═════╝ ╚═╝
+
+INSHA A ALLAH WE WILL THE IOI 2024 BECOMING THE YOUNGEST EVER TO DO SO.
+
+IN ORDER FOR US TO DO THIS WE WILL NEED TO MASTER :
+
+
+*** DYNAMIC PROGRAMMING
+
+
+*** GREEY PROBLEMS
+
+
+*** DFS AND BFS
+
+
+*** HASHMAPS AND BINARY TREES AND WHAT NOT (DATA STRUCTURES)
+
+
+*** SLIDING WINDOW PROBLEMS

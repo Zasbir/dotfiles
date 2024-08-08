@@ -1,0 +1,71 @@
+██╗   ██╗██╗███╗   ███╗███████╗ ██████╗██████╗ ██╗██████╗ ████████╗
+██║   ██║██║████╗ ████║██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝
+██║   ██║██║██╔████╔██║███████╗██║     ██████╔╝██║██████╔╝   ██║
+╚██╗ ██╔╝██║██║╚██╔╝██║╚════██║██║     ██╔══██╗██║██╔═══╝    ██║
+ ╚████╔╝ ██║██║ ╚═╝ ██║███████║╚██████╗██║  ██║██║██║        ██║
+  ╚═══╝  ╚═╝╚═╝     ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝
+
+
+vim script is the official scripting language used to configure 
+the vim text editor.
+
+in this file we go through a book called LEARN VIMSCRIPT THE HARD WAY.
+
+
+** ECHO MESSAGES:
+
+
+in vim we use the :echo command in order to print text to the standard
+output.
+
+and we use :echom in order to keep a log of the text that was outputted.
+
+
+** SETTING OPTIONS
+
+
+in vim we can use the :set command to environment variables.
+
+
+** MAPPING
+
+
+in vim we use the map keyword in order to map a key to a pre existing 
+command.
+
+
+** MODAL MAPPING
+
+
+modal mapping is used to make maps more flexible as in : to make maps 
+that only work in a specific mode.
+
+
+** SIDE EFFECTS OF USING MAP NMAP AND VMAP
+
+
+there are possible recursive side effects that come with using the afore
+mentioned commands therefore, one should use the *noremap counterparts of
+these commands. thus rendering the previous commands useless.
+
+
+** ABBREVIATIONS
+
+
+vim has a feature called abbreviations that feel similar to mappings but 
+are meant for use insert, replace, and command modes.
+
+this can be used for an end effect similar to that of autocorrect.
+
+
+** AUTOCOMMANDS
+
+
+autocommands are a way to tell vim to run certain commands when certain 
+events happen.
+
+for example we can tell that whenever we open a new buffer that was not created
+before we tell it to write it permanently to the file system.
+
+
+** 

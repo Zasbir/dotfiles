@@ -1,0 +1,39 @@
+███████╗███╗   ███╗ █████╗ ██╗  ██╗███████╗
+██╔════╝████╗ ████║██╔══██╗██║ ██╔╝╚══███╔╝
+█████╗  ██╔████╔██║███████║█████╔╝   ███╔╝
+██╔══╝  ██║╚██╔╝██║██╔══██║██╔═██╗  ███╔╝
+███████╗██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗
+╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+
+is a widely known text editor for Linux.
+
+INSHA A ALLAH
+
+CUSTOM DISTRO INCOMING
+
+this document will follow the docs for emacs lisp.
+
+
+LISTS
+------
+
+IN LISP, a list looks this : '(rose violet daisy buttercup).
+
+notes - preceded by a single apostrophe and it could be written vertically as well:
+
+- '(rose
+    violet
+    daisy
+    buttercup)
+
+the individual elements of these lists are called atoms; since atoms, linguistically, are thought of to be "indivisable", and since the singular elements that constitute a list cannot be broken down further they are called ATOMS.
+
+** in a list, atoms are seperated with whitespace and not commas.
+
+a list with nothing in it looks like the empty tuple like in HASKELL; it is considered an atom and a list at the same time.
+
+in nature, there are many kinds of atoms, however, in emacs lisp, there are only few which are equivalent to the data types in other, quite frankly, BETTER programming languages.
+
+TEXT BETWEN DOUBLE QUOTATION MARKS - EVEN QUESTIONS OR PARAGRAPHS - IS ALSO AN ATOM.
+
+

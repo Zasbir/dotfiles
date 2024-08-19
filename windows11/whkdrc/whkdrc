@@ -1,0 +1,81 @@
+#██╗    ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
+#██║    ██║██║  ██║██║ ██╔╝██╔══██╗██╔══██╗██╔════╝
+#██║ █╗ ██║███████║█████╔╝ ██║  ██║██████╔╝██║
+#██║███╗██║██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║
+#╚███╔███╔╝██║  ██║██║  ██╗██████╔╝██║  ██║╚██████╗
+# ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
+
+.shell powershell
+
+# Reload whkd configuration
+# super + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
+super + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+super + shift + o         : komorebic reload-configuration
+
+super + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
+# super + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+
+super + q                 : komorebic close
+super + m                 : komorebic minimize
+
+# Focus windows
+super + h                 : komorebic focus left
+super + j                 : komorebic focus down
+super + k                 : komorebic focus up
+super + l                 : komorebic focus right
+super + shift + oem_4     : komorebic cycle-focus previous # oem_4 is [
+super + shift + oem_6     : komorebic cycle-focus next # oem_6 is ]
+
+# Move windows
+super + shift + h         : komorebic move left
+super + shift + j         : komorebic move down
+super + shift + k         : komorebic move up
+super + shift + l         : komorebic move right
+super + shift + return    : komorebic promote
+
+# Stack windows
+super + left              : komorebic stack left
+super + down              : komorebic stack down
+super + up                : komorebic stack up
+super + right             : komorebic stack right
+super + oem_1             : komorebic unstack # oem_1 is ;
+super + oem_4             : komorebic cycle-stack previous # oem_4 is [
+super + oem_6             : komorebic cycle-stack next # oem_6 is ]
+
+# Resize
+super + oem_plus          : komorebic resize-axis horizontal increase
+super + oem_minus         : komorebic resize-axis horizontal decrease
+super + shift + oem_plus  : komorebic resize-axis vertical increase
+super + shift + oem_minus : komorebic resize-axis vertical decrease
+
+# Manipulate windows
+super + t                 : komorebic toggle-float
+super + shift + f         : komorebic toggle-monocle
+
+# Window manager options
+super + shift + r         : komorebic retile
+super + p                 : komorebic toggle-pause
+
+# Layouts
+super + x                 : komorebic flip-layout horizontal
+super + y                 : komorebic flip-layout vertical
+
+# Workspaces
+super + 1                 : komorebic focus-workspace 0
+super + 2                 : komorebic focus-workspace 1
+super + 3                 : komorebic focus-workspace 2
+super + 4                 : komorebic focus-workspace 3
+super + 5                 : komorebic focus-workspace 4
+super + 6                 : komorebic focus-workspace 5
+super + 7                 : komorebic focus-workspace 6
+super + 8                 : komorebic focus-workspace 7
+
+# Move windows across workspaces
+super + shift + 1         : komorebic move-to-workspace 0
+super + shift + 2         : komorebic move-to-workspace 1
+super + shift + 3         : komorebic move-to-workspace 2
+super + shift + 4         : komorebic move-to-workspace 3
+super + shift + 5         : komorebic move-to-workspace 4
+super + shift + 6         : komorebic move-to-workspace 5
+super + shift + 7         : komorebic move-to-workspace 6
+super + shift + 8         : komorebic move-to-workspace 8 

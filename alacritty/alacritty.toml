@@ -32,17 +32,23 @@ lines = 20
 x = 20
 y = 20
 
+#[font]
+#normal.family = "MorePerfectDOSVGA"
+#bold.family =  "MorePerfectDOSVGA"
+#italic.family = "MorePerfectDOSVGA"
+#bold_italic.family = "MorePerfectDOSVGA"
+
+#[font]
+#normal.family =  "JetBrains Mono NL"
+#bold.family = "JetBrains Mono NL"
+#italic.family = "JetBrains Mono NL"
+#bold_italic.family = "JetBrains Mono NL"
+
 [font]
-normal.family = "MorePerfectDOSVGA"
-bold.family =  "MorePerfectDOSVGA"
-italic.family = "MorePerfectDOSVGA"
-bold_italic.family = "MorePerfectDOSVGA"
-
-
-#normal.family = "LessPerfectDOSVGA"
-#bold.family =  "LessPerfectDOSVGA"
-#italic.family = "LessPerfectDOSVGA"
-#bold_italic.family = "LessPerfectDOSVGA"
+normal.family = "LessPerfectDOSVGA"
+bold.family =  "LessPerfectDOSVGA"
+italic.family = "LessPerfectDOSVGA"
+bold_italic.family = "LessPerfectDOSVGA"
 
 
 #normal.family = "CartographCF"
